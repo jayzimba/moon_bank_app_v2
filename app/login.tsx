@@ -12,6 +12,7 @@ import {
   KeyboardAvoidingView,
   Platform,
   ScrollView,
+  StatusBar,
 } from "react-native";
 import ButtonComponent from "@/components/ButtonComponent";
 import { router } from "expo-router";
@@ -135,6 +136,7 @@ export default function LoginScreen() {
 
   return (
     <SafeAreaView style={styles.container}>
+      <StatusBar barStyle="dark-content" backgroundColor="#fff" />
       <View
         style={styles.backgroundImage}
       >
